@@ -1,0 +1,382 @@
+[
+  {
+    "modifiedBy": "smadmin",
+    "modifiedDate": 1701785948070,
+    "distributionList": [
+      {
+        "meName": "vndatanpc01",
+        "provState": "PROVISIONED",
+        "statusInfo": "Successfully distributed",
+        "existOnME": true
+      },
+      {
+        "meName": "sfdatanpc01",
+        "provState": "PROVISIONED",
+        "statusInfo": "Successfully distributed",
+        "existOnME": true
+      }
+    ],
+    "smProvState": "PROVISIONED",
+    "name": "Basic_Home_5",
+    "desc": "5 MB on High speed",
+    "ucsType": "BASIC",
+    "sessionKey": "1000",
+    "priority": 1400010,
+    "ucsLevel": "SESSION",
+    "quotaLimit": 5,
+    "quotaType": "TOTAL",
+    "allowOverage": true,
+    "shareSessionUsage": false,
+    "baseUnit": 1,
+    "minBaseUnit": 1,
+    "creationTime": null,
+    "lastUpdateTime": null,
+    "appCond": {
+      "modifiedBy": null,
+      "modifiedDate": null,
+      "distributionList": [
+        {
+          "meName": "vndatanpc01",
+          "provState": "PROVISIONED",
+          "statusInfo": "Successfully distributed",
+          "existOnME": true
+        },
+        {
+          "meName": "sfdatanpc01",
+          "provState": "PROVISIONED",
+          "statusInfo": "Successfully distributed",
+          "existOnME": true
+        }
+      ],
+      "smProvState": "PROVISIONED",
+      "id": "Basic_Home_5",
+      "application": "PCRF-Rules",
+      "rules": [
+        {
+          "description": "",
+          "conditionContainer": {
+            "subContainers": [],
+            "conditions": [
+              {
+                "criteria": {
+                  "name": "Load-Row-1Key",
+                  "sourceContext": "COMPLEX_MAP"
+                },
+                "criteriaArguments": [
+                  {
+                    "name": "Key-Value",
+                    "value": {
+                      "type": "ATTRIBUTE",
+                      "value": "GX_MSG_SESSION.3GPP-SGSN-Address-String"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Map-Name",
+                    "value": {
+                      "type": "STRING",
+                      "value": "BG_only"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Row-Label",
+                    "value": {
+                      "type": "STRING",
+                      "value": "sgsn_ip_list"
+                    },
+                    "valueArguments": []
+                  }
+                ],
+                "criteriaAdjustOperator": null,
+                "criteriaAdjustValue": [],
+                "operator": "EQUAL",
+                "value": {
+                  "type": "ENUM",
+                  "value": "BooleanEnum.TRUE"
+                },
+                "valueArguments": [],
+                "adjustOperator": null,
+                "adjustValue": []
+              },
+              {
+                "criteria": {
+                  "name": "Load-Row-1Key",
+                  "sourceContext": "COMPLEX_MAP"
+                },
+                "criteriaArguments": [
+                  {
+                    "name": "Key-Value",
+                    "value": {
+                      "type": "ATTRIBUTE",
+                      "value": "GX_MSG_SESSION.AN-GW-Address-String"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Map-Name",
+                    "value": {
+                      "type": "STRING",
+                      "value": "BG_only"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Row-Label",
+                    "value": {
+                      "type": "STRING",
+                      "value": "sgsn_ip_list"
+                    },
+                    "valueArguments": []
+                  }
+                ],
+                "criteriaAdjustOperator": null,
+                "criteriaAdjustValue": [],
+                "operator": "EQUAL",
+                "value": {
+                  "type": "ENUM",
+                  "value": "BooleanEnum.TRUE"
+                },
+                "valueArguments": [],
+                "adjustOperator": null,
+                "adjustValue": []
+              },
+              {
+                "criteria": {
+                  "name": "Load-Row-1Key",
+                  "sourceContext": "COMPLEX_MAP"
+                },
+                "criteriaArguments": [
+                  {
+                    "name": "Key-Value",
+                    "value": {
+                      "type": "ATTRIBUTE",
+                      "value": "GX_MSG_SESSION.3GPP-SGSN-Address-String"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Row-Label",
+                    "value": {
+                      "type": "STRING",
+                      "value": "EU_roaming_list"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Map-Name",
+                    "value": {
+                      "type": "STRING",
+                      "value": "EURoaming"
+                    },
+                    "valueArguments": []
+                  }
+                ],
+                "criteriaAdjustOperator": null,
+                "criteriaAdjustValue": [],
+                "operator": "EQUAL",
+                "value": {
+                  "type": "ENUM",
+                  "value": "BooleanEnum.TRUE"
+                },
+                "valueArguments": [],
+                "adjustOperator": null,
+                "adjustValue": []
+              },
+              {
+                "criteria": {
+                  "name": "Load-Row-1Key",
+                  "sourceContext": "COMPLEX_MAP"
+                },
+                "criteriaArguments": [
+                  {
+                    "name": "Key-Value",
+                    "value": {
+                      "type": "ATTRIBUTE",
+                      "value": "GX_MSG_SESSION.AN-GW-Address-String"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Row-Label",
+                    "value": {
+                      "type": "STRING",
+                      "value": "EU_roaming_list"
+                    },
+                    "valueArguments": []
+                  },
+                  {
+                    "name": "Map-Name",
+                    "value": {
+                      "type": "STRING",
+                      "value": "EURoaming"
+                    },
+                    "valueArguments": []
+                  }
+                ],
+                "criteriaAdjustOperator": null,
+                "criteriaAdjustValue": [],
+                "operator": "EQUAL",
+                "value": {
+                  "type": "ENUM",
+                  "value": "BooleanEnum.TRUE"
+                },
+                "valueArguments": [],
+                "adjustOperator": null,
+                "adjustValue": []
+              }
+            ],
+            "operator": "OR"
+          },
+          "actions": [
+            {
+              "attributeInfo": {
+                "name": "Is-Service-Applicable",
+                "resultContext": "POLICY"
+              },
+              "parameters": [],
+              "resultContext": "POLICY",
+              "name": "Is-Service-Applicable"
+            }
+          ],
+          "name": "applicabilityRule"
+        }
+      ]
+    },
+    "doNotDisconnect": null,
+    "quotaUnitType": {
+      "modifiedBy": null,
+      "modifiedDate": 1705988605055,
+      "distributionList": [
+        {
+          "meName": "vndatanpc01",
+          "provState": "PROVISIONED",
+          "statusInfo": "Successfully distributed",
+          "existOnME": true
+        },
+        {
+          "meName": "sfdatanpc01",
+          "provState": "PROVISIONED",
+          "statusInfo": "Successfully distributed",
+          "existOnME": true
+        }
+      ],
+      "smProvState": "PROVISIONED",
+      "unitTypeName": "MByte",
+      "kindOfUnit": "VOLUME",
+      "shortName": "MB",
+      "defaultUnit": false,
+      "defaultSMUnit": false,
+      "typeConverter": {
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "distributionList": [
+          {
+            "meName": "vndatanpc01",
+            "provState": "PROVISIONED",
+            "statusInfo": "Successfully distributed",
+            "existOnME": true
+          },
+          {
+            "meName": "sfdatanpc01",
+            "provState": "PROVISIONED",
+            "statusInfo": "Successfully distributed",
+            "existOnME": true
+          }
+        ],
+        "smProvState": "PROVISIONED",
+        "rightSideUnit": "Byte",
+        "leftSideValue": 1,
+        "rightSideValue": 1048576
+      }
+    },
+    "thresholdProfileGroupIdList": [
+      "Base_Threshold_Final"
+    ],
+    "counterDefRefList": [
+      {
+        "modifiedBy": "smadmin",
+        "modifiedDate": 1687871865820,
+        "distributionList": [],
+        "smProvState": "NEW",
+        "name": "ucsCtr_Basic_Home_5",
+        "unitType": {
+          "modifiedBy": null,
+          "modifiedDate": 1705988605055,
+          "distributionList": [
+            {
+              "meName": "vndatanpc01",
+              "provState": "PROVISIONED",
+              "statusInfo": "Successfully distributed",
+              "existOnME": true
+            },
+            {
+              "meName": "sfdatanpc01",
+              "provState": "PROVISIONED",
+              "statusInfo": "Successfully distributed",
+              "existOnME": true
+            }
+          ],
+          "smProvState": "PROVISIONED",
+          "unitTypeName": "MByte",
+          "kindOfUnit": "VOLUME",
+          "shortName": "MB",
+          "defaultUnit": false,
+          "defaultSMUnit": false,
+          "typeConverter": {
+            "modifiedBy": null,
+            "modifiedDate": null,
+            "distributionList": [
+              {
+                "meName": "vndatanpc01",
+                "provState": "PROVISIONED",
+                "statusInfo": "Successfully distributed",
+                "existOnME": true
+              },
+              {
+                "meName": "sfdatanpc01",
+                "provState": "PROVISIONED",
+                "statusInfo": "Successfully distributed",
+                "existOnME": true
+              }
+            ],
+            "smProvState": "PROVISIONED",
+            "rightSideUnit": "Byte",
+            "leftSideValue": 1,
+            "rightSideValue": 1048576
+          }
+        },
+        "counterType": "USAGE",
+        "counterScope": "SELF",
+        "counterConsumptionType": "COUNTER",
+        "counterConsumptionList": [],
+        "thresholdProfileGroupIds": [
+          "Base_Threshold"
+        ],
+        "ocsPolicyCounter": false,
+        "resourceBased": null,
+        "bktConsumType": null,
+        "chargingCounter": false,
+        "applicabilityCondition": null,
+        "fetchNonCSRecords": false,
+        "capIds": [],
+        "deviceId": null,
+        "counterDeviceIds": null,
+        "ruleTables": [],
+        "groupId": null,
+        "updateSession": 0,
+        "updateSessionResult": 0,
+        "overageThresholdProfileGroupIdList": [],
+        "usageLimit": null,
+        "overageLimit": null,
+        "thresholdProfileGroupIdList": [
+          "Base_Threshold"
+        ]
+      }
+    ],
+    "clearPenalty": null,
+    "resetUsage": null,
+    "assign": null,
+    "unAssign": null
+  }
+]
